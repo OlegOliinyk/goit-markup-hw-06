@@ -103,6 +103,7 @@ img {
   display: flex;
   max-width: 344px;
   column-gap: 40px;
+  gap: 40px;
 }
 
 .address-link {
@@ -205,6 +206,7 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .paragraph {
@@ -212,6 +214,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: center;
 }
 
 /* Section_Team */
@@ -228,12 +231,14 @@ img {
   color: #2e2f42;
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .container-team-ul {
   margin-top: 74px;
   display: flex;
   column-gap: 24px;
+  gap: 24px;
 }
 
 .our-team-item {
@@ -256,6 +261,7 @@ img {
   justify-content: center;
   flex-direction: column;
   gap: 8px;
+  padding: 32px 0;
 }
 
 /* Section_Portfolio */
