@@ -22,7 +22,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
-  width: 1440px;
 }
 
 img {
@@ -192,11 +191,6 @@ img {
 
 .container-benefits-ul-li {
   max-width: calc((100% - 72px) / 4);
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 8px;
 }
 
 .title-three {
@@ -206,7 +200,6 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  text-align: center;
 }
 
 .paragraph {
@@ -214,7 +207,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  text-align: center;
 }
 
 /* Section_Team */
@@ -242,13 +234,7 @@ img {
 }
 
 .our-team-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 32px;
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
   width: calc((100% - 72px) / 4);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -256,12 +242,11 @@ img {
 }
 
 .img-team-description {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 8px;
   padding: 32px 0;
+}
+
+.al-centr {
+  text-align: center;
 }
 
 /* Section_Portfolio */
@@ -279,10 +264,6 @@ img {
 }
 
 .img-description {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 8px;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
