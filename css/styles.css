@@ -368,6 +368,8 @@ img {
 
 .overlay-text {
   position: absolute;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   top: 0;
   color: #f4f4fd;
   padding: 40px 32px;
