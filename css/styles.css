@@ -239,7 +239,10 @@ img {
   border-radius: 4px;
   width: 264px;
   height: 112px;
-  background: #f4f4fd;
+  background-color: #f4f4fd;
+}
+
+.icon-benefits-svg {
 }
 
 .title-three {
@@ -335,7 +338,6 @@ img {
 
 .social-list-icon {
   fill: #f4f4fd;
-  stroke: #fff;
 }
 
 /* Section_Portfolio */
