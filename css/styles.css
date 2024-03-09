@@ -698,7 +698,7 @@ p.footer-color {
   margin-right: 8px;
 }
 
-.form-checkbox-wrapper > input:checked {
+.form-checkbox-wrapper > input:checked ~ .form-checkbox-label-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
