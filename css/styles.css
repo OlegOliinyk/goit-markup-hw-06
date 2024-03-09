@@ -505,6 +505,7 @@ p.footer-color {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  cursor: pointer;
 }
 
 .send-button-icon {
@@ -607,7 +608,6 @@ p.footer-color {
 }
 
 .form-input-label,
-.form-textarea-label,
 .form-checkbox-label {
   display: block;
   font-family: var(--font-family);
@@ -624,6 +624,10 @@ p.footer-color {
   width: 360px;
   height: 40px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-textarea-wrapper {
+  margin-bottom: 16px;
 }
 
 .form-input-wrapper:hover .form-input-icon,
@@ -649,19 +653,29 @@ p.footer-color {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-input:focus {
+  border-color: #4d5ae5;
+}
+
+.form-input:focus > .form-input-icon {
+  fill: #4d5ae5;
+}
+
 .form-textarea-input {
-  font-style: 12px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   width: 100%;
   color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  width: 360px;
   height: 120px;
   padding: 8px 16px;
   background-color: transparent;
   outline: transparent;
   resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input-icon {
@@ -684,7 +698,7 @@ p.footer-color {
   margin-right: 8px;
 }
 
-.form-checkbox-input:checked {
+.form-checkbox-wrapper input:checked {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;

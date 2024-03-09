@@ -538,15 +538,19 @@
         <div class="footer-email">
           <p class="paragraph social-media">Subscribe</p>
           <form class="email-input-send">
-            <label class="email-input-send-label" for="">
+            <label class="email-input-send-label" for="subscribe-email">
               <input
                 class="footer-email-input"
                 type="email"
-                name="Subscribe-email"
+                name="subscribe-email"
+                id="subscribe-email"
                 placeholder="E-mail"
                 required />
             </label>
-            <button class="footer-subscribe" type="submit">
+            <button
+              class="footer-subscribe"
+              type="submit"
+              name="footer-subscribe">
               Subscribe
               <svg
                 class="send-button-icon"
@@ -560,7 +564,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-button" type="button">
           <svg
@@ -629,10 +633,8 @@
               </svg>
             </div>
           </div>
-          <div class="form-contacts-wrapper">
-            <label class="form-textarea-label" for="user-comment"
-              >Comment</label
-            >
+          <div class="form-contacts-wrapper form-textarea-wrapper">
+            <label class="form-input-label" for="user-comment">Comment</label>
             <textarea
               class="form-textarea-input"
               name="user-comment"
@@ -651,9 +653,9 @@
             <label class="form-checkbox-label" for="user-privacy">
               <span class="form-checkbox-label-span">
                 <svg class="form-checkbox-label-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-checkmark"></use>
-                </svg> </span
-              >accept the terms and conditions of the
+                  <use
+                    href="./images/icons.svg#icon-checkmark"></use></svg></span
+              >I accept the terms and conditions of the
               <a href="#" class="form-checkbox-label-link">Privacy Policy</a>
             </label>
           </div>
