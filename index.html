@@ -537,27 +537,30 @@
         </div>
         <div class="footer-email">
           <p class="paragraph social-media">Subscribe</p>
-          <div class="email-input-send">
-            <input
-              class="footer-email-input"
-              type="email"
-              name="Subscribe-email"
-              required />
+          <form class="email-input-send">
+            <label class="email-input-send-label" for="">
+              <input
+                class="footer-email-input"
+                type="email"
+                name="Subscribe-email"
+                placeholder="E-mail"
+                required />
+            </label>
             <button class="footer-subscribe" type="submit">
               Subscribe
               <svg
                 class="send-button-icon"
                 width="24"
-                height="20"
+                height="24"
                 aria-label="send button icon">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-close-button" type="button">
           <svg
@@ -631,22 +634,27 @@
               >Comment</label
             >
             <textarea
-              class="form-input form-textarea-input"
+              class="form-textarea-input"
               name="user-comment"
               id="user-comment"
-              placeholder="Ваш коментарій"></textarea>
+              placeholder="Text input">
+            </textarea>
           </div>
           <div class="form-checkbox-wrapper">
             <input
               type="checkbox"
-              class="form-checkbox-input"
-              name="privacy-policy"
-              id="privacy-policy"
+              class="form-checkbox-input visually-hidden"
+              name="user-privacy"
+              id="user-privacy"
               value="true"
               required />
-            <label class="form-checkbox-label" for="privacy-policy"
-              >I accept the terms and conditions of the
-              <a href="">Privacy Policy</a>
+            <label class="form-checkbox-label" for="user-privacy">
+              <span class="form-checkbox-label-span">
+                <svg class="form-checkbox-label-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkmark"></use>
+                </svg> </span
+              >accept the terms and conditions of the
+              <a href="#" class="form-checkbox-label-link">Privacy Policy</a>
             </label>
           </div>
           <button class="form-submit" type="submit">

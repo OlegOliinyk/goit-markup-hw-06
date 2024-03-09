@@ -469,11 +469,22 @@ p.footer-color {
 }
 
 .footer-email-input {
-  border: 1px solid white;
+  border: 1px solid #ffffff;
   border-radius: 4px;
   width: 264px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer-email-input::placeholder {
+  color: #ffffff;
 }
 
 .footer-subscribe {
@@ -482,11 +493,22 @@ p.footer-color {
   justify-content: center;
   flex-direction: row;
   gap: 16px;
+  border: none;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
-  background-color: #5a4fcf;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.send-button-icon {
+  margin-left: 16px;
 }
 
 /* Backdrop styles */
@@ -542,8 +564,7 @@ p.footer-color {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -555,6 +576,7 @@ p.footer-color {
 }
 
 .modal-close-button-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-p {
@@ -564,6 +586,7 @@ p.footer-color {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 16px;
 }
 
 .form-contacts {
@@ -580,6 +603,7 @@ p.footer-color {
 .form-contacts-wrapper {
   border: 1px solid var(--iris);
   border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .form-input-label,
@@ -589,9 +613,9 @@ p.footer-color {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--light-slate);
+  color: #8e8f99;
   margin-bottom: 4px;
 }
 
@@ -604,29 +628,40 @@ p.footer-color {
 
 .form-input-wrapper:hover .form-input-icon,
 .form-input-wrapper:focus .form-input-icon {
-  fill: #404bbf;
+  fill: #4d5ae5;
 }
 
 .form-input-wrapper:hover .form-input,
 .form-input-wrapper:focus .form-input,
 .form-textarea-input:hover,
 .form-textarea-input:focus {
-  border: 1px solid #5a4fcf;
+  border: 1px solid #4d5ae5;
 }
 
-.form-input,
-.form-textarea-input {
-  border: 1px solid #8e8f99;
+.form-input {
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
   height: 40px;
   padding-left: 38px;
   background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-textarea-input {
+  font-style: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  width: 100%;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
   height: 120px;
   padding: 8px 16px;
+  background-color: transparent;
+  outline: transparent;
+  resize: none;
 }
 
 .form-input-icon {
@@ -649,13 +684,44 @@ p.footer-color {
   margin-right: 8px;
 }
 
+.form-checkbox-input:checked {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.form-checkbox-label-span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  fill: transparent;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-checkbox-label-link {
+  color: #4d5ae5;
+}
+
 .form-submit {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: #404bbf;
+  background-color: #4d5ae5;
   margin: 0 auto;
 }
 
