@@ -657,7 +657,7 @@ p.footer-color {
   border-color: #4d5ae5;
 }
 
-.form-input:focus > .form-input-icon {
+.form-input:focus + .form-input-icon {
   fill: #4d5ae5;
 }
 
@@ -698,7 +698,7 @@ p.footer-color {
   margin-right: 8px;
 }
 
-.form-checkbox-wrapper input:checked {
+.form-checkbox-wrapper > input:checked {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
