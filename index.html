@@ -364,6 +364,7 @@
                       ./images/banking_app.jpg    1x,
                       ./images/banking_app@2x.jpg 2x
                     "
+                    med
                     media="(min-width: 1158px)" />
                   <source
                     srcset="
@@ -447,9 +448,7 @@
                       ./images/meditation_app_mobile@2x.jpg 2x
                     "
                     media="(max-width: 767px)" />
-                  <img
-                    src="./images/meditation_app_mobile.jpg"
-                    alt="Meditation App" />
+                  <img src="./images/meditation_app.jpg" alt="Meditation App" />
                 </picture>
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -659,7 +658,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-close-button" type="button">
           <svg
@@ -759,6 +758,88 @@
           </button>
         </form>
       </div>
+    </div>
+    <div class="mobile-menu menu-is-open">
+      <button class="menu-close-button" type="button">
+        <svg
+          class="menu-close-button-icon"
+          width="8"
+          height="8"
+          aria-label="close icon">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-nav-ul">
+          <li>
+            <a class="mobile-menu-nav-link" href="./index.html">Studio</a>
+          </li>
+          <li>
+            <a class="mobile-menu-nav-link" href="#our-portfolio">Portfolio</a>
+          </li>
+          <li><a class="mobile-menu-nav-link" href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="mobile-menu-address" id="contacts">
+        <ul class="mobile-menu-address-ul">
+          <li>
+            <a class="mobile-menu-address-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="mobile-menu-address-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="social-list-footer">
+        <li class="social-list-item-footer">
+          <a class="social-list-link social-list-link-footer" href="#">
+            <svg
+              class="social-list-icon"
+              width="24"
+              height="24"
+              aria-label="icon-instagram">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item-footer">
+          <a class="social-list-link social-list-link-footer" href="#">
+            <svg
+              class="social-list-icon"
+              width="24"
+              height="24"
+              aria-label="icon-twitter">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item-footer">
+          <a class="social-list-link social-list-link-footer" href="#">
+            <svg
+              class="social-list-icon"
+              width="24"
+              height="24"
+              aria-label="icon-facebook">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item-footer">
+          <a class="social-list-link social-list-link-footer" href="#">
+            <svg
+              class="social-list-icon"
+              width="24"
+              height="24"
+              aria-label="icon-linkedin">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
