@@ -48,6 +48,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 16px;
 }
 
 .logo {
@@ -367,7 +368,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 .title-three-benefits {
@@ -544,12 +545,6 @@ img {
     width: calc((100% - 72px) / 4);
   }
 
-  /* .title-three {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-  } */
-
   .paragraph {
     font-weight: 400;
   }
@@ -609,6 +604,10 @@ img {
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
   padding: 32px 16px;
+}
+
+.title-three-portfolio {
+  margin-bottom: 8px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -766,7 +765,6 @@ p.footer-color {
 }
 
 .send-button-icon {
-  margin-left: 16px;
   fill: #ffffff;
 }
 
